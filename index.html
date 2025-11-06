@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Den Kolde Krig Tidslinje (1945-1991)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: linear-gradient(to bottom, #ff6b6b, #4ecdc4);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: white;
+            border: 4px solid #ff6b6b;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .right::after {
+            left: -16px;
+        }
+        
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+        
+        .content h2 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ff6b6b;
+            padding-bottom: 5px;
+        }
+        
+        .date {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        
+        .description {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .importance {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .decade-header {
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            margin: 40px 0 20px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 15px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Den Kolde Krig</h1>
+            <p>En tidslinje over den internationale udvikling 1945-1991</p>
+        </div>
+        
+        <div class="timeline">
+            
+            <div class="decade-header">1940'erne - Krigens Afslutning og Splittelse</div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">8. maj 1945</div>
+                    <h2>V-E Day - Tysklands Kapitulation</h2>
+                    <div class="description">
+                        Tyskland kapitulerede til de allierede. Dette markerede afslutningen på 2. Verdenskrig i Europa og begyndelsen på de politiske spændinger mellem Øst og Vest.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">17. juli - 2. august 1945</div>
+                    <h2>Potsdam-konferencen</h2>
+                    <div class="description">
+                        Truman, Churchill/Attlee og Stalin delte Tyskland og Østrig i fire besættelseszoner. Berlin blev også delt i fire zoner. Denne opdeling blev grundlaget for den senere politiske splittelse.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">6. august 1945</div>
+                    <h2>Atombomben over Hiroshima</h2>
+                    <div class="description">
+                        USA kastede den første atombombe over Hiroshima, Japan. Dette demonstrerede USA's nye atomvåbenkapacitet og indvarslede atomvåbenkapløbet under Den Kolde Krig.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">5. marts 1946</div>
+                    <h2>Churchills "Jerntæppe" Tale</h2>
+                    <div class="description">
+                        Winston Churchill holdt sin berømte tale i Fulton, Missouri, hvor han første gang brugte udtrykket "jerntæppe" om den sovjetiske indflydelse i Østeuropa.
+                    </div>
+                    <div class="importance">Symbolsk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">12. marts 1947</div>
+                    <h2>Truman-doktrinen</h2>
+                    <div class="description">
+                        Præsident Truman erklærede, at USA ville støtte frie folk i kampen mod totalitære regimer. Dette blev grundlaget for amerikansk indblanding (containment) politik under Den Kolde Krig.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">5. juni 1947</div>
+                    <h2>Marshall-planen</h2>
+                    <div class="description">
+                        USA lancerede den europæiske genopretningsplan for at genopbygge Vesteuropa økonomisk og forhindre sovjetisk indflydelse. Over 13 milliarder dollars blev investeret.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">24. juni 1948 - 12. maj 1949</div>
+                    <h2>Berlin-blokaden</h2>
+                    <div class="description">
+                        Sovjetunionen blokerede alle landveje til Vest-Berlin. USA og Storbritannien svarede med Berlin-luftbroen, der forsynede byen i 11 måneder. Dette var den første store konfrontation i Den Kolde Krig.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">4. april 1949</div>
+                    <h2>NATO dannes</h2>
+                    <div class="description">
+                        Den Nordatlantiske Traktat blev underskrevet af 12 lande, herunder Danmark. Dette militære forsvarsforbund blev oprettet som modvægt til sovjetisk ekspansion. Danmark valgte NATO frem for neutralitet.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">29. august 1949</div>
+                    <h2>Sovjetunionen tester første atombombe</h2>
+                    <div class="description">
+                        Sovjetunionen gennemførte sin første succesfulde atomprøve, hvilket afsluttede USA's atommonopol og intensiverede atomvåbenkapløbet mellem supermagterne.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="decade-header">1950'erne - Kapløb og Konfrontation</div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">25. juni 1950 - 27. juli 1953</div>
+                    <h2>Koreakrigen</h2>
+                    <div class="description">
+                        Nordkorea invaderede Sydkorea. USA og FN-styrker støttede Syd, mens Kina og Sovjetunionen støttede Nord. Krigen endte i patruljestillstand, og Korea forblev delt.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">1. november 1952</div>
+                    <h2>USA tester første hydrogenbombe</h2>
+                    <div class="description">
+                        USA detonerede "Ivy Mike", den første hydrogenbombe, som var 1000 gange kraftigere end atombomberne over Japan. Dette eskalerede atomvåbenkapløbet betydeligt.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">5. marts 1953</div>
+                    <h2>Stalins død</h2>
+                    <div class="description">
+                        Josef Stalins død markerede slutningen på en æra. Nikita Khrusjtjov overtog magten i Sovjetunionen og indførte "afstalinisering" samt en mere åben politik.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">14. maj 1955</div>
+                    <h2>Warszawa-pagten</h2>
+                    <div class="description">
+                        Sovjetunionen og syv østeuropæiske lande dannede Warszawa-pagten som svar på NATO. Dette formaliserede den militære opdeling af Europa i to blokke.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">4. oktober 1957</div>
+                    <h2>Sputnik 1 opsendes</h2>
+                    <div class="description">
+                        Sovjetunionen sendte den første kunstige satellit i kredsløb om Jorden. Dette chokerede Vesten og startede rumkapløbet mellem supermagterne.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">23. oktober - 10. november 1956</div>
+                    <h2>Ungarnske revolution</h2>
+                    <div class="description">
+                        Ungarske opstande mod den sovjetisk-støttede regering blev brutalt nedkæmpet af sovjetiske tanks. Vestmagterne greb ikke ind, hvilket viste grænserne for "befrielsespolitikken".
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="decade-header">1960'erne - Kriser og Detente</div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">1. maj 1960</div>
+                    <h2>U-2 affæren</h2>
+                    <div class="description">
+                        Et amerikansk U-2 spionfly blev skudt ned over Sovjetunionen. Piloten Gary Powers blev taget til fange, hvilket ødelagde et planlagt topmøde mellem Eisenhower og Khrusjtjov.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">17. april 1961</div>
+                    <h2>Svinebugten-invasionen</h2>
+                    <div class="description">
+                        CIA-støttede cubanske eksiler forsøgte at vælte Fidel Castros regering. Invasionen mislykkedes og drev Cuba tættere på Sovjetunionen.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">13. august 1961</div>
+                    <h2>Berlinmuren bygges</h2>
+                    <div class="description">
+                        Østtyskland byggede en mur gennem Berlin for at stoppe flygtningestrømmen til Vest. Muren blev det mest synlige symbol på Den Kolde Krigs opdeling af Europa.
+                    </div>
+                    <div class="importance">Symbolsk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">16-28. oktober 1962</div>
+                    <h2>Cubamissil-krisen</h2>
+                    <div class="description">
+                        Sovjetiske atomraketter blev opdaget på Cuba. I 13 dage var verden på randen af atomkrig, indtil Khrusjtjov gik med til at fjerne missilerne i bytte for amerikanske garantier.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">5. august 1963</div>
+                    <h2>Delvis teststop-traktat</h2>
+                    <div class="description">
+                        USA, Sovjetunionen og Storbritannien underskrev en traktat, der forbød atomprøver i atmosfæren, rummet og under vand. Dette var det første våbenkontrolaftale i Den Kolde Krig.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">20. juli 1969</div>
+                    <h2>Månelanding</h2>
+                    <div class="description">
+                        Apollo 11 landede på månen, og Neil Armstrong blev det første menneske til at betræde måneoverfladen. USA vandt hermed rumkapløbet mod Sovjetunionen.
+                    </div>
+                    <div class="importance">Symbolsk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">21. august 1968</div>
+                    <h2>Invasionen af Tjekkoslovakiet</h2>
+                    <div class="description">
+                        Warszawapagt-styrker invaderede Tjekkoslovakiet for at stoppe "Prag-foråret" - liberaliseringsreformerne under Alexander Dubček. Dette styrkede Brezjnev-doktrinen.
+                    </div>
+                    <div class="importance">Kritisk</div>
+                </div>
+            </div>
+            
+            <div class="decade-header">1970'erne - Détente og Nye Spændinger</div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">26. maj 1972</div>
+                    <h2>SALT I-aftalen</h2>
+                    <div class="description">
+                        USA og Sovjetunionen underskrev Strategic Arms Limitation Treaty, som begrænsede antallet af strategiske atomvåben. Dette markerede højdepunktet af détente-perioden.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">1. august 1975</div>
+                    <h2>Helsinki-aftalen</h2>
+                    <div class="description">
+                        35 lande underskrev Helsinki-slutakten, som anerkende efterkrigstidens europæiske grænser og bekræftede principperne om menneskerettigheder og samarbejde.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">30. april 1975</div>
+                    <h2>Saigons fald</h2>
+                    <div class="description">
+                        Sydvietnam kapitulerede til nordvietnamesiske styrker. USA's nederlag i Vietnam var et stort prestigetab og påvirkede amerikansk udenrigspolitik i årtier.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">27. december 1979</div>
+                    <h2>Sovjetisk invasion af Afghanistan</h2>
+                    <div class="description">
+                        Sovjetunionen invaderede Afghanistan for at støtte den kommunistiske regering. Dette markerede slutningen på détente-perioden og begyndelsen på en ny fase af Den Kolde Krig.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="decade-header">1980'erne - Anden Kolde Krig og Afslutning</div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">20. januar 1981</div>
+                    <h2>Reagan bliver præsident</h2>
+                    <div class="description">
+                        Ronald Reagan blev amerikansk præsident og indførte en hårdere linje over for Sovjetunionen, som han kaldte "det onde imperium". Han øgede militærudgifterne markant.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">23. marts 1983</div>
+                    <h2>Strategic Defense Initiative ("Star Wars")</h2>
+                    <div class="description">
+                        Reagan lancerede et program for at udvikle et rumbaseret missilforsvar. Selvom det aldrig blev fuldt realiseret, pressede det den sovjetiske økonomi yderligere.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">11. marts 1985</div>
+                    <h2>Gorbatjov bliver sovjetleder</h2>
+                    <div class="description">
+                        Mikhail Gorbatjov blev generalsekretær i Sovjetunionen og indførte reformerne glasnost (åbenhed) og perestrojka (omstrukturering), som skulle modernisere sovjetsystemet.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">26. april 1986</div>
+                    <h2>Tjernobyl-katastrofen</h2>
+                    <div class="description">
+                        En eksplosion i atomkraftværket i Tjernobyl spredte radioaktiv forurening over store dele af Europa. Katastrofen blottede sovietiske systemfejl og påskyndede glasnost.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">12. juni 1987</div>
+                    <h2>"Riv denne mur ned!"</h2>
+                    <div class="description">
+                        Reagan holdt sin berømte tale ved Berlinmuren, hvor han udfordrede Gorbatjov til at rive muren ned. Talen blev symbolsk for Vestens pres for forandring.
+                    </div>
+                    <div class="importance">Symbolsk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">8. december 1987</div>
+                    <h2>INF-traktaten</h2>
+                    <div class="description">
+                        USA og Sovjetunionen underskrev Intermediate-Range Nuclear Forces Treaty, som eliminerede en hel klasse af atomvåben. Dette var et gennembrud i våbenkontrollen.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">9. november 1989</div>
+                    <h2>Berlinmurens fald</h2>
+                    <div class="description">
+                        Østtyske myndigheder åbnede grænseovergangene til Vest-Berlin. Tusindvis af østtyskere strømmede gennem, og Berlinmuren blev symbolsk revet ned af borgerne.
+                    </div>
+                    <div class="importance">Symbolsk</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">3. oktober 1990</div>
+                    <h2>Tysk genforening</h2>
+                    <div class="description">
+                        Østtyskland og Vesttyskland blev genforenet som ét land. Dette symboliserede afslutningen på Europas opdeling og var et afgørende skridt mod Den Kolde Krigs ende.
+                    </div>
+                    <div class="importance">Skelsættende</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">1. juli 1991</div>
+                    <h2>Warszawa-pagtens opløsning</h2>
+                    <div class="description">
+                        Warszawa-pagten blev formelt opløst, hvilket markerede enden på den militære blokdeling af Europa, der havde defineret Den Kolde Krig.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item right">
+                <div class="content">
+                    <div class="date">31. juli 1991</div>
+                    <h2>START-traktaten undertegnes</h2>
+                    <div class="description">
+                        USA og Sovjetunionen underskrev Strategic Arms Reduction Treaty, som reducerede antallet af strategiske atomvåben betydeligt og markerede et nyt kapitel i våbenkontrollen.
+                    </div>
+                    <div class="importance">Betydelig</div>
+                </div>
+            </div>
+            
+            <div class="timeline-item left">
+                <div class="content">
+                    <div class="date">25. december 1991</div>
+                    <h2>Sovjetunionens opløsning</h2>
+                    <div class="description">
+                        Mikhail Gorbatjov trak sig tilbage som præsident, og Sovjetunionen blev formelt opløst. Hammer og segl-flaget blev sænket fra Kreml for sidste gang. Den Kolde Krig var slut.
+                    </div>
+                    <div class="importance">Fundamental</div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="header" style="margin-top: 60px; margin-bottom: 20px;">
+            <h2 style="font-size: 1.5rem;">Konklusion</h2>
+            <p style="font-size: 1rem; max-width: 800px; margin: 0 auto; opacity: 0.9;">
+                Den Kolde Krig (1945-1991) formede verdenshistorien i næsten et halvt århundrede. Fra Tysklands kapitulation til Sovjetunionens opløsning gennemgik verden en periode med ideologisk kamp, atomvåbenkapløb, og proxy-krige. Danmark spillede en vigtig rolle som NATO-medlem og frontlinjestat. Perioden sluttede ikke med krig, men med fredelig forandring og det kommunistiske systems kollaps.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
