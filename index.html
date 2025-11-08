@@ -290,7 +290,12 @@
         .flashcard-definition {
             color: #555;
             line-height: 1.8;
+                    display: none;
         }
+
+                .flashcard.flipped .flashcard-definition {
+                                display: block;
+                            }
 
         /* Responsive */
         @media (max-width: 768px) {
@@ -1235,6 +1240,13 @@
             // Add active class to clicked button
             event.target.classList.add('active');
         }
+
+            // Flashcard flip functionality
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    });
     </script>
 
 </body>
